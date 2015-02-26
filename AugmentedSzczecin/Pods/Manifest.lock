@@ -2,11 +2,16 @@ PODS:
   - Alamofire (1.1.4)
 
 DEPENDENCIES:
-  - Alamofire (from `git@github.com:Alamofire/Alamofire.git`, branch `xcode-6.3`)
+  - Alamofire (from `git@github.com:Alamofire/Alamofire.git`, commit `d337018a5bf1e8a2d720dbe22846647e3f13e8a4`)
 
 EXTERNAL SOURCES:
   Alamofire:
-    :branch: xcode-6.3
+    :commit: d337018a5bf1e8a2d720dbe22846647e3f13e8a4
+    :git: git@github.com:Alamofire/Alamofire.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: d337018a5bf1e8a2d720dbe22846647e3f13e8a4
     :git: git@github.com:Alamofire/Alamofire.git
 
 SPEC CHECKSUMS:

@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
-xcodeproj 'AugmentedSzczecin'
-pod 'Alamofire', :git => "git@github.com:Alamofire/Alamofire.git", :branch=> 'xcode-6.3'
-
+target :AugmentedSzczecin do
+	pod 'Alamofire', :git => "git@github.com:Alamofire/Alamofire.git", :commit=> 'd337018a5bf1e8a2d720dbe22846647e3f13e8a4'
+end 
