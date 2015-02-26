@@ -13,6 +13,7 @@
 		6D2DE50E1A9B7033003717F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2DE50D1A9B7033003717F8 /* Images.xcassets */; };
 		6D2DE5111A9B7033003717F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D2DE50F1A9B7033003717F8 /* LaunchScreen.xib */; };
 		6D2DE51D1A9B7033003717F8 /* AugmentedSzczecinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2DE51C1A9B7033003717F8 /* AugmentedSzczecinTests.swift */; };
+		6DE4352F1A9F856800917AB4 /* FileToTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4352E1A9F856800917AB4 /* FileToTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		6D2DE5161A9B7033003717F8 /* AugmentedSzczecinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AugmentedSzczecinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2DE51B1A9B7033003717F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D2DE51C1A9B7033003717F8 /* AugmentedSzczecinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedSzczecinTests.swift; sourceTree = "<group>"; };
+		6DE4352E1A9F856800917AB4 /* FileToTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileToTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				6D2DE50D1A9B7033003717F8 /* Images.xcassets */,
 				6D2DE50F1A9B7033003717F8 /* LaunchScreen.xib */,
 				6D2DE5041A9B7033003717F8 /* Supporting Files */,
+				6DE4352E1A9F856800917AB4 /* FileToTest.swift */,
 			);
 			path = AugmentedSzczecin;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				6D2DE5091A9B7033003717F8 /* ViewController.swift in Sources */,
 				6D2DE5071A9B7033003717F8 /* AppDelegate.swift in Sources */,
+				6DE4352F1A9F856800917AB4 /* FileToTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +411,7 @@
 				6D2DE5221A9B7033003717F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D2DE5231A9B7033003717F8 /* Build configuration list for PBXNativeTarget "AugmentedSzczecinTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				6D2DE5251A9B7033003717F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
