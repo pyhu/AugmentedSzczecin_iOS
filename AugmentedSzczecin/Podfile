@@ -5,3 +5,8 @@ platform :ios, '8.0'
 target :AugmentedSzczecin do
 	pod 'Alamofire', :git => "git@github.com:Alamofire/Alamofire.git", :commit=> 'cde1cc93824a689f5d429f035bc663548fcca135'
 end 
+
+target :AugmentedSzczecinTests do
+	pod 'OCMock', '~> 3.1'
+end 
+
