@@ -6,6 +6,8 @@ Patronage 2015 Augmented Szczecin iOS client.
 - Use at least Xcode 6.3 (currently Beta) with Swift 1.2.
 - Work with gitflow workflow.
 
+# Pods
+We don't want to ignore this directory to avoid situation when one of the pods or dependency is missing on the CocoaPods server.
 
 # Extras
 - [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
