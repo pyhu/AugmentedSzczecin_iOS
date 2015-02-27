@@ -10,6 +10,60 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+		<key>09D0B0478FE2A92E6C47FBBE</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>2C15BB62906A084B62160087</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-AugmentedSzczecinTests/Pods-AugmentedSzczecinTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
 		<key>42C79130E086D2005EE57E9A</key>
 		<dict>
 			<key>explicitFileType</key>
@@ -35,6 +89,21 @@
 			<string>libPods-AugmentedSzczecin.a</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>58C56FCFB0CA99363C6F3ECD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-AugmentedSzczecinTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-AugmentedSzczecinTests/Pods-AugmentedSzczecinTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>5EB5517377AE1BDE2B5FE14E</key>
 		<dict>
@@ -421,7 +490,9 @@
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
-			<array/>
+			<array>
+				<string>B0E8D47DA6AB3378353B457D</string>
+			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
@@ -444,9 +515,11 @@
 			<string>6D2DE5231A9B7033003717F8</string>
 			<key>buildPhases</key>
 			<array>
+				<string>09D0B0478FE2A92E6C47FBBE</string>
 				<string>6D2DE5121A9B7033003717F8</string>
 				<string>6D2DE5131A9B7033003717F8</string>
 				<string>6D2DE5141A9B7033003717F8</string>
+				<string>2C15BB62906A084B62160087</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -777,6 +850,8 @@
 		</dict>
 		<key>6D2DE5241A9B7033003717F8</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C1D23C3A8BAC47C54C9825F5</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>BUNDLE_LOADER</key>
@@ -807,6 +882,8 @@
 		</dict>
 		<key>6D2DE5251A9B7033003717F8</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>58C56FCFB0CA99363C6F3ECD</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>BUNDLE_LOADER</key>
@@ -836,6 +913,8 @@
 			<array>
 				<string>B6EEC7F471F4EBF1FD094437</string>
 				<string>9A78CE0DD15202A86FD6BD9A</string>
+				<string>C1D23C3A8BAC47C54C9825F5</string>
+				<string>58C56FCFB0CA99363C6F3ECD</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -896,6 +975,13 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
+		<key>B0E8D47DA6AB3378353B457D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EDF7547C261707CA1663C02A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>B6EEC7F471F4EBF1FD094437</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -911,6 +997,21 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>C1D23C3A8BAC47C54C9825F5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-AugmentedSzczecinTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-AugmentedSzczecinTests/Pods-AugmentedSzczecinTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>CCB0030457FC948A022451BC</key>
 		<dict>
 			<key>fileRef</key>
@@ -918,12 +1019,26 @@ fi
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>EDF7547C261707CA1663C02A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-AugmentedSzczecinTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>F723254C0E53789B7B9D930F</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>42C79130E086D2005EE57E9A</string>
 				<string>461BD8A8B0587210AABCEE9B</string>
+				<string>EDF7547C261707CA1663C02A</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>

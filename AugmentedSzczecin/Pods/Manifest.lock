@@ -1,8 +1,10 @@
 PODS:
   - Alamofire (1.1.4)
+  - OCMock (3.1.2)
 
 DEPENDENCIES:
   - Alamofire (from `git@github.com:Alamofire/Alamofire.git`, commit `d337018a5bf1e8a2d720dbe22846647e3f13e8a4`)
+  - OCMock (~> 3.1)
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -16,5 +18,6 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 7c87bf4a655df535791f4195bd803bf4f6c9c835
+  OCMock: ecdd510b73ef397f2f97274785c1e87fd147c49f
 
 COCOAPODS: 0.35.0
