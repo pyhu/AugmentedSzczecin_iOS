@@ -25,6 +25,34 @@
 			remoteGlobalIDString = 6D2DE5001A9B7033003717F8;
 			remoteInfo = AugmentedSzczecin;
 		};
+		A4CB801D1AA4FBC700FF22B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CB80161AA4FBC600FF22B7 /* BLSAugmentedController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A12AE5E21A63E8DD00C03FAD;
+			remoteInfo = BLSAugmentedControllerDemo;
+		};
+		A4CB801F1AA4FBC700FF22B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CB80161AA4FBC600FF22B7 /* BLSAugmentedController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A12AE60F1A63E99500C03FAD;
+			remoteInfo = BLSAugmentedController;
+		};
+		A4CB80211AA4FBC700FF22B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CB80161AA4FBC600FF22B7 /* BLSAugmentedController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A12AE6191A63E99500C03FAD;
+			remoteInfo = BLSAugmentedControllerTests;
+		};
+		A4CB80231AA4FC2800FF22B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CB80161AA4FBC600FF22B7 /* BLSAugmentedController.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A12AE60E1A63E99500C03FAD;
+			remoteInfo = BLSAugmentedController;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +71,7 @@
 		88C0473809D3465E0B0E8CE0 /* Pods_AugmentedSzczecinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AugmentedSzczecinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		910EF554C1DC1F0DAAA42A47 /* Pods_AugmentedSzczecin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AugmentedSzczecin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A78CE0DD15202A86FD6BD9A /* Pods-AugmentedSzczecin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecin.release.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecin/Pods-AugmentedSzczecin.release.xcconfig"; sourceTree = "<group>"; };
+		A4CB80161AA4FBC600FF22B7 /* BLSAugmentedController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BLSAugmentedController.xcodeproj; path = ../../External/BLSAugmentedController/BLSAugmentedController.xcodeproj; sourceTree = "<group>"; };
 		B6EEC7F471F4EBF1FD094437 /* Pods-AugmentedSzczecin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecin/Pods-AugmentedSzczecin.debug.xcconfig"; sourceTree = "<group>"; };
 		C71386729CA57FAA34BF4B7D /* Pods-AugmentedSzczecinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecinTests/Pods-AugmentedSzczecinTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +119,7 @@
 		6D2DE5031A9B7033003717F8 /* AugmentedSzczecin */ = {
 			isa = PBXGroup;
 			children = (
+				A4CB80161AA4FBC600FF22B7 /* BLSAugmentedController.xcodeproj */,
 				6D2DE5061A9B7033003717F8 /* AppDelegate.swift */,
 				6D2DE5081A9B7033003717F8 /* ViewController.swift */,
 				6D2DE50A1A9B7033003717F8 /* Main.storyboard */,
@@ -136,6 +166,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A4CB80171AA4FBC600FF22B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4CB801E1AA4FBC700FF22B7 /* BLSAugmentedControllerDemo.app */,
+				A4CB80201AA4FBC700FF22B7 /* libBLSAugmentedController.a */,
+				A4CB80221AA4FBC700FF22B7 /* BLSAugmentedControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F723254C0E53789B7B9D930F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +203,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A4CB80241AA4FC2800FF22B7 /* PBXTargetDependency */,
 			);
 			name = AugmentedSzczecin;
 			productName = AugmentedSzczecin;
@@ -219,6 +260,12 @@
 			mainGroup = 6D2DE4F81A9B7033003717F8;
 			productRefGroup = 6D2DE5021A9B7033003717F8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A4CB80171AA4FBC600FF22B7 /* Products */;
+					ProjectRef = A4CB80161AA4FBC600FF22B7 /* BLSAugmentedController.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6D2DE5001A9B7033003717F8 /* AugmentedSzczecin */,
@@ -226,6 +273,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A4CB801E1AA4FBC700FF22B7 /* BLSAugmentedControllerDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = BLSAugmentedControllerDemo.app;
+			remoteRef = A4CB801D1AA4FBC700FF22B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A4CB80201AA4FBC700FF22B7 /* libBLSAugmentedController.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBLSAugmentedController.a;
+			remoteRef = A4CB801F1AA4FBC700FF22B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A4CB80221AA4FBC700FF22B7 /* BLSAugmentedControllerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BLSAugmentedControllerTests.xctest;
+			remoteRef = A4CB80211AA4FBC700FF22B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6D2DE4FF1A9B7033003717F8 /* Resources */ = {
@@ -365,6 +436,11 @@
 			isa = PBXTargetDependency;
 			target = 6D2DE5001A9B7033003717F8 /* AugmentedSzczecin */;
 			targetProxy = 6D2DE5171A9B7033003717F8 /* PBXContainerItemProxy */;
+		};
+		A4CB80241AA4FC2800FF22B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BLSAugmentedController;
+			targetProxy = A4CB80231AA4FC2800FF22B7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
