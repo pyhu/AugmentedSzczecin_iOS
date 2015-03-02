@@ -1,0 +1,3 @@
+[submodule "AugmentedSzczecin/BLSAugmentedController"]
+	path = AugmentedSzczecin/BLSAugmentedController
+	url = https://github.com/blstream/BLSAugmentedController.git
