@@ -14,8 +14,11 @@
 		6D2DE50E1A9B7033003717F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2DE50D1A9B7033003717F8 /* Images.xcassets */; };
 		6D2DE5111A9B7033003717F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D2DE50F1A9B7033003717F8 /* LaunchScreen.xib */; };
 		6D2DE51D1A9B7033003717F8 /* AugmentedSzczecinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2DE51C1A9B7033003717F8 /* AugmentedSzczecinTests.swift */; };
+		6D90A57F1AA7450600F36771 /* BLSAugmentedAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D90A5771AA7450600F36771 /* BLSAugmentedAnnotationView.m */; };
+		6D90A5801AA7450600F36771 /* BLSAugmentedAnnotationViewCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D90A5791AA7450600F36771 /* BLSAugmentedAnnotationViewCache.m */; };
+		6D90A5811AA7450600F36771 /* BLSAugmentedControllerHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D90A57C1AA7450600F36771 /* BLSAugmentedControllerHelpers.m */; };
+		6D90A5821AA7450600F36771 /* BLSAugmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D90A57E1AA7450600F36771 /* BLSAugmentedViewController.m */; };
 		A4FE1C701AA518750044DE55 /* ASTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE1C6F1AA518750044DE55 /* ASTestViewController.swift */; };
-		A4FE1C8D1AA5238D0044DE55 /* libBLSAugmentedController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FE1C881AA522D60044DE55 /* libBLSAugmentedController.a */; };
 		D386927B9EBA7240D980CCF6 /* Pods_AugmentedSzczecin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910EF554C1DC1F0DAAA42A47 /* Pods_AugmentedSzczecin.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -26,34 +29,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6D2DE5001A9B7033003717F8;
 			remoteInfo = AugmentedSzczecin;
-		};
-		A4FE1C851AA522D60044DE55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4FE1C7E1AA522D60044DE55 /* BLSAugmentedController.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A12AE5E21A63E8DD00C03FAD;
-			remoteInfo = BLSAugmentedControllerDemo;
-		};
-		A4FE1C871AA522D60044DE55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4FE1C7E1AA522D60044DE55 /* BLSAugmentedController.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A12AE60F1A63E99500C03FAD;
-			remoteInfo = BLSAugmentedController;
-		};
-		A4FE1C891AA522D60044DE55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4FE1C7E1AA522D60044DE55 /* BLSAugmentedController.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A12AE6191A63E99500C03FAD;
-			remoteInfo = BLSAugmentedControllerTests;
-		};
-		A4FE1C8B1AA522FE0044DE55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4FE1C7E1AA522D60044DE55 /* BLSAugmentedController.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A12AE60E1A63E99500C03FAD;
-			remoteInfo = BLSAugmentedController;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -70,12 +45,21 @@
 		6D2DE5161A9B7033003717F8 /* AugmentedSzczecinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AugmentedSzczecinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2DE51B1A9B7033003717F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D2DE51C1A9B7033003717F8 /* AugmentedSzczecinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedSzczecinTests.swift; sourceTree = "<group>"; };
+		6D90A5751AA7450600F36771 /* BLSAugmentedAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLSAugmentedAnnotation.h; path = BLSAugmentedController/BLSAugmentedControllerFramework/BLSAugmentedAnnotation.h; sourceTree = "<group>"; };
+		6D90A5761AA7450600F36771 /* BLSAugmentedAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLSAugmentedAnnotationView.h; path = BLSAugmentedController/BLSAugmentedControllerFramework/BLSAugmentedAnnotationView.h; sourceTree = "<group>"; };
+		6D90A5771AA7450600F36771 /* BLSAugmentedAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLSAugmentedAnnotationView.m; path = BLSAugmentedController/BLSAugmentedControllerFramework/BLSAugmentedAnnotationView.m; sourceTree = "<group>"; };
+		6D90A5781AA7450600F36771 /* BLSAugmentedAnnotationViewCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLSAugmentedAnnotationViewCache.h; path = BLSAugmentedController/BLSAugmentedControllerFramework/BLSAugmentedAnnotationViewCache.h; sourceTree = "<group>"; };
+		6D90A5791AA7450600F36771 /* BLSAugmentedAnnotationViewCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLSAugmentedAnnotationViewCache.m; path = BLSAugmentedController/BLSAugmentedControllerFramework/BLSAugmentedAnnotationViewCache.m; sourceTree = "<group>"; };
+		6D90A57A1AA7450600F36771 /* BLSAugmentedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLSAugmentedController.h; path = BLSAugmentedController/BLSAugmentedControllerFramework/BLSAugmentedController.h; sourceTree = "<group>"; };
+		6D90A57B1AA7450600F36771 /* BLSAugmentedControllerHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLSAugmentedControllerHelpers.h; path = BLSAugmentedController/BLSAugmentedControllerFramework/BLSAugmentedControllerHelpers.h; sourceTree = "<group>"; };
+		6D90A57C1AA7450600F36771 /* BLSAugmentedControllerHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLSAugmentedControllerHelpers.m; path = BLSAugmentedController/BLSAugmentedControllerFramework/BLSAugmentedControllerHelpers.m; sourceTree = "<group>"; };
+		6D90A57D1AA7450600F36771 /* BLSAugmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLSAugmentedViewController.h; path = BLSAugmentedController/BLSAugmentedControllerFramework/BLSAugmentedViewController.h; sourceTree = "<group>"; };
+		6D90A57E1AA7450600F36771 /* BLSAugmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLSAugmentedViewController.m; path = BLSAugmentedController/BLSAugmentedControllerFramework/BLSAugmentedViewController.m; sourceTree = "<group>"; };
 		88C0473809D3465E0B0E8CE0 /* Pods_AugmentedSzczecinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AugmentedSzczecinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		910EF554C1DC1F0DAAA42A47 /* Pods_AugmentedSzczecin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AugmentedSzczecin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A78CE0DD15202A86FD6BD9A /* Pods-AugmentedSzczecin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecin.release.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecin/Pods-AugmentedSzczecin.release.xcconfig"; sourceTree = "<group>"; };
 		A4FE1C6F1AA518750044DE55 /* ASTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTestViewController.swift; sourceTree = "<group>"; };
 		A4FE1C711AA5191D0044DE55 /* AugmentedSzczecin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AugmentedSzczecin-Bridging-Header.h"; sourceTree = "<group>"; };
-		A4FE1C7E1AA522D60044DE55 /* BLSAugmentedController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BLSAugmentedController.xcodeproj; path = BLSAugmentedController/BLSAugmentedController.xcodeproj; sourceTree = SOURCE_ROOT; };
 		B6EEC7F471F4EBF1FD094437 /* Pods-AugmentedSzczecin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecin/Pods-AugmentedSzczecin.debug.xcconfig"; sourceTree = "<group>"; };
 		C71386729CA57FAA34BF4B7D /* Pods-AugmentedSzczecinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecinTests/Pods-AugmentedSzczecinTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4FE1C8D1AA5238D0044DE55 /* libBLSAugmentedController.a in Frameworks */,
 				D386927B9EBA7240D980CCF6 /* Pods_AugmentedSzczecin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				6D2DE5031A9B7033003717F8 /* AugmentedSzczecin */,
+				6D90A5731AA744CD00F36771 /* Externals */,
 				6D2DE5191A9B7033003717F8 /* AugmentedSzczecinTests */,
 				6D2DE5021A9B7033003717F8 /* Products */,
 				F723254C0E53789B7B9D930F /* Frameworks */,
@@ -124,14 +108,11 @@
 		6D2DE5031A9B7033003717F8 /* AugmentedSzczecin */ = {
 			isa = PBXGroup;
 			children = (
-				A4FE1C7E1AA522D60044DE55 /* BLSAugmentedController.xcodeproj */,
 				6D2DE5061A9B7033003717F8 /* AppDelegate.swift */,
 				6D2DE5081A9B7033003717F8 /* ViewController.swift */,
-				6D2DE50A1A9B7033003717F8 /* Main.storyboard */,
-				6D2DE50D1A9B7033003717F8 /* Images.xcassets */,
-				A4FE1C711AA5191D0044DE55 /* AugmentedSzczecin-Bridging-Header.h */,
-				6D2DE50F1A9B7033003717F8 /* LaunchScreen.xib */,
+				6D90A5721AA744B300F36771 /* Storyboards & XIBs */,
 				6D2DE5041A9B7033003717F8 /* Supporting Files */,
+				6D2DE50D1A9B7033003717F8 /* Images.xcassets */,
 				A4FE1C6F1AA518750044DE55 /* ASTestViewController.swift */,
 			);
 			path = AugmentedSzczecin;
@@ -140,6 +121,7 @@
 		6D2DE5041A9B7033003717F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4FE1C711AA5191D0044DE55 /* AugmentedSzczecin-Bridging-Header.h */,
 				6D2DE5051A9B7033003717F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -162,6 +144,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6D90A5721AA744B300F36771 /* Storyboards & XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				6D2DE50A1A9B7033003717F8 /* Main.storyboard */,
+				6D2DE50F1A9B7033003717F8 /* LaunchScreen.xib */,
+			);
+			name = "Storyboards & XIBs";
+			sourceTree = "<group>";
+		};
+		6D90A5731AA744CD00F36771 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				6D90A5741AA744E500F36771 /* BLSAugmentedViewController */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
+		6D90A5741AA744E500F36771 /* BLSAugmentedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6D90A5751AA7450600F36771 /* BLSAugmentedAnnotation.h */,
+				6D90A5761AA7450600F36771 /* BLSAugmentedAnnotationView.h */,
+				6D90A5771AA7450600F36771 /* BLSAugmentedAnnotationView.m */,
+				6D90A5781AA7450600F36771 /* BLSAugmentedAnnotationViewCache.h */,
+				6D90A5791AA7450600F36771 /* BLSAugmentedAnnotationViewCache.m */,
+				6D90A57A1AA7450600F36771 /* BLSAugmentedController.h */,
+				6D90A57B1AA7450600F36771 /* BLSAugmentedControllerHelpers.h */,
+				6D90A57C1AA7450600F36771 /* BLSAugmentedControllerHelpers.m */,
+				6D90A57D1AA7450600F36771 /* BLSAugmentedViewController.h */,
+				6D90A57E1AA7450600F36771 /* BLSAugmentedViewController.m */,
+			);
+			name = BLSAugmentedViewController;
+			sourceTree = "<group>";
+		};
 		6E785378C7A87AF30DFD8EE2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,16 +187,6 @@
 				057FA5CAC38BA6CA6D144787 /* Pods-AugmentedSzczecinTests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		A4FE1C7F1AA522D60044DE55 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A4FE1C861AA522D60044DE55 /* BLSAugmentedControllerDemo.app */,
-				A4FE1C881AA522D60044DE55 /* libBLSAugmentedController.a */,
-				A4FE1C8A1AA522D60044DE55 /* BLSAugmentedControllerTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		F723254C0E53789B7B9D930F /* Frameworks */ = {
@@ -210,7 +216,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A4FE1C8C1AA522FE0044DE55 /* PBXTargetDependency */,
 			);
 			name = AugmentedSzczecin;
 			productName = AugmentedSzczecin;
@@ -267,12 +272,6 @@
 			mainGroup = 6D2DE4F81A9B7033003717F8;
 			productRefGroup = 6D2DE5021A9B7033003717F8 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A4FE1C7F1AA522D60044DE55 /* Products */;
-					ProjectRef = A4FE1C7E1AA522D60044DE55 /* BLSAugmentedController.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				6D2DE5001A9B7033003717F8 /* AugmentedSzczecin */,
@@ -280,30 +279,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A4FE1C861AA522D60044DE55 /* BLSAugmentedControllerDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = BLSAugmentedControllerDemo.app;
-			remoteRef = A4FE1C851AA522D60044DE55 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A4FE1C881AA522D60044DE55 /* libBLSAugmentedController.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libBLSAugmentedController.a;
-			remoteRef = A4FE1C871AA522D60044DE55 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A4FE1C8A1AA522D60044DE55 /* BLSAugmentedControllerTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = BLSAugmentedControllerTests.xctest;
-			remoteRef = A4FE1C891AA522D60044DE55 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6D2DE4FF1A9B7033003717F8 /* Resources */ = {
@@ -423,9 +398,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D90A57F1AA7450600F36771 /* BLSAugmentedAnnotationView.m in Sources */,
 				A4FE1C701AA518750044DE55 /* ASTestViewController.swift in Sources */,
+				6D90A5811AA7450600F36771 /* BLSAugmentedControllerHelpers.m in Sources */,
 				6D2DE5091A9B7033003717F8 /* ViewController.swift in Sources */,
 				6D2DE5071A9B7033003717F8 /* AppDelegate.swift in Sources */,
+				6D90A5821AA7450600F36771 /* BLSAugmentedViewController.m in Sources */,
+				6D90A5801AA7450600F36771 /* BLSAugmentedAnnotationViewCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,11 +423,6 @@
 			isa = PBXTargetDependency;
 			target = 6D2DE5001A9B7033003717F8 /* AugmentedSzczecin */;
 			targetProxy = 6D2DE5171A9B7033003717F8 /* PBXContainerItemProxy */;
-		};
-		A4FE1C8C1AA522FE0044DE55 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BLSAugmentedController;
-			targetProxy = A4FE1C8B1AA522FE0044DE55 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
