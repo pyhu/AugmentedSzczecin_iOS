@@ -22,48 +22,53 @@ class KacperTlustyTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    var halper = Helper()
+    func testHelperConcatenateTwoStrings() {
+        XCTAssertEqual(halper.concatenate("a", s2: "b"), "ab", "")
     }
     
-    func testHelperConcatenate() {
-        var halper = Helper()
-        XCTAssertEqual(halper.concatenate("a", s2: "b"), "ab", "")
+    func testHelperConcatenateStringAndNil() {
         XCTAssertEqual(halper.concatenate("a", s2: nil), "a", "")
+    }
+    
+    func testHelperConcatenateEmptyStringObjectAndString() {
         XCTAssertEqual(halper.concatenate(String(), s2: "b"), "b", "")
     }
     
-    func testMockLogIn(){
-        class mockTrueAPIManager: APIManager {
-            private override func isConnection() -> Bool {
-                return true
-            }
+    
+    //I'm not sending bool as parameter into method becouse that wouldn't be override,
+    //so signIn() method would still invoke isConnection without parametres
+    class mockAPIManager: APIManager {
+        
+        init(isConnected: Bool!) {
+            self.isConnected = isConnected
         }
         
-        let testTrueAPIManager = mockTrueAPIManager()
-        XCTAssertEqual(testTrueAPIManager.signIn("Kacper", password: "qwerty123").success, true, "")
-        XCTAssertEqual(testTrueAPIManager.signIn("Kacper", password: "qwerty123").error, false, "")
+        internal var isConnected: Bool
         
-        class mockFalseApiManager: APIManager {
-            private override func isConnection() -> Bool {
-                return false;
-            }
+        internal override func isConnection() -> Bool {
+            return isConnected
         }
-        
-        let testFalseApiManager = mockFalseApiManager()
-        XCTAssertEqual(testFalseApiManager.signIn("Kacper", password: "qwerty123").success, false, "")
-        XCTAssertEqual(testFalseApiManager.signIn("Kacper", password: "qwerty123").error, true, "")
-        
-        
-        
+    }
+
+    let testAPIManager = mockAPIManager(isConnected: true)
+    
+    func testLogInSuccessFieldWithConnectionSuccess() {
+        XCTAssertEqual(testAPIManager.signIn("Kacper", password: "qwerty123").success, true, "")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    func testLogInErrorFieldWithConnectionSuccess() {
+        XCTAssertEqual(testAPIManager.signIn("Kacper", password: "qwerty123").error, false, "")
+    }
+    
+    func testLogInSuccessFieldWithConnectionFail() {
+        testAPIManager.isConnected = false;
+        XCTAssertEqual(testAPIManager.signIn("Kacper", password: "qwerty123").success, false, "")
+    }
+    
+    func testLogInErrorFieldWithConnectionFail() {
+        testAPIManager.isConnected = false;
+        XCTAssertEqual(testAPIManager.signIn("Kacper", password: "qwerty123").error, true, "")
     }
     
 }
