@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23625D3D1AAE0DB100EAC93B /* libBLSAugmentedController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23625D3C1AAE0DB100EAC93B /* libBLSAugmentedController.a */; };
 		47B8BD5423453E8F7879AFAB /* Pods_AugmentedSzczecinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C0473809D3465E0B0E8CE0 /* Pods_AugmentedSzczecinTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D2DE5071A9B7033003717F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2DE5061A9B7033003717F8 /* AppDelegate.swift */; };
 		6D2DE5091A9B7033003717F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2DE5081A9B7033003717F8 /* ViewController.swift */; };
@@ -14,10 +15,6 @@
 		6D2DE50E1A9B7033003717F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2DE50D1A9B7033003717F8 /* Images.xcassets */; };
 		6D2DE5111A9B7033003717F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D2DE50F1A9B7033003717F8 /* LaunchScreen.xib */; };
 		6D2DE51D1A9B7033003717F8 /* AugmentedSzczecinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2DE51C1A9B7033003717F8 /* AugmentedSzczecinTests.swift */; };
-		6D90A57F1AA7450600F36771 /* BLSAugmentedAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D90A5771AA7450600F36771 /* BLSAugmentedAnnotationView.m */; };
-		6D90A5801AA7450600F36771 /* BLSAugmentedAnnotationViewCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D90A5791AA7450600F36771 /* BLSAugmentedAnnotationViewCache.m */; };
-		6D90A5811AA7450600F36771 /* BLSAugmentedControllerHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D90A57C1AA7450600F36771 /* BLSAugmentedControllerHelpers.m */; };
-		6D90A5821AA7450600F36771 /* BLSAugmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D90A57E1AA7450600F36771 /* BLSAugmentedViewController.m */; };
 		A4FE1C701AA518750044DE55 /* ASTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE1C6F1AA518750044DE55 /* ASTestViewController.swift */; };
 		D386927B9EBA7240D980CCF6 /* Pods_AugmentedSzczecin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910EF554C1DC1F0DAAA42A47 /* Pods_AugmentedSzczecin.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -34,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		057FA5CAC38BA6CA6D144787 /* Pods-AugmentedSzczecinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecinTests/Pods-AugmentedSzczecinTests.release.xcconfig"; sourceTree = "<group>"; };
-		42C79130E086D2005EE57E9A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		23625D3C1AAE0DB100EAC93B /* libBLSAugmentedController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBLSAugmentedController.a; path = "BLSAugmentedController/build/Debug-iphoneos/libBLSAugmentedController.a"; sourceTree = "<group>"; };
 		6D2DE5011A9B7033003717F8 /* AugmentedSzczecin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedSzczecin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2DE5051A9B7033003717F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D2DE5061A9B7033003717F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23625D3D1AAE0DB100EAC93B /* libBLSAugmentedController.a in Frameworks */,
 				D386927B9EBA7240D980CCF6 /* Pods_AugmentedSzczecin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,7 +190,7 @@
 		F723254C0E53789B7B9D930F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42C79130E086D2005EE57E9A /* libPods.a */,
+				23625D3C1AAE0DB100EAC93B /* libBLSAugmentedController.a */,
 				910EF554C1DC1F0DAAA42A47 /* Pods_AugmentedSzczecin.framework */,
 				88C0473809D3465E0B0E8CE0 /* Pods_AugmentedSzczecinTests.framework */,
 			);
@@ -398,13 +396,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D90A57F1AA7450600F36771 /* BLSAugmentedAnnotationView.m in Sources */,
 				A4FE1C701AA518750044DE55 /* ASTestViewController.swift in Sources */,
-				6D90A5811AA7450600F36771 /* BLSAugmentedControllerHelpers.m in Sources */,
 				6D2DE5091A9B7033003717F8 /* ViewController.swift in Sources */,
 				6D2DE5071A9B7033003717F8 /* AppDelegate.swift in Sources */,
-				6D90A5821AA7450600F36771 /* BLSAugmentedViewController.m in Sources */,
-				6D90A5801AA7450600F36771 /* BLSAugmentedAnnotationViewCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +525,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BLSAugmentedController",
 				);
 				INFOPLIST_FILE = AugmentedSzczecin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -539,6 +534,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AugmentedSzczecin-gbavcvnjdmmisxfegsdjtgglmcxm/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/BLSAugmentedController/build/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -562,6 +558,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BLSAugmentedController",
 				);
 				INFOPLIST_FILE = AugmentedSzczecin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -570,6 +567,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AugmentedSzczecin-gbavcvnjdmmisxfegsdjtgglmcxm/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/BLSAugmentedController/build/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
