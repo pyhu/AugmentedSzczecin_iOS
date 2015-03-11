@@ -22,21 +22,21 @@ class KacperTlustyTests: XCTestCase {
         super.tearDown()
     }
     
-    var halper = Helper()
+    var helper = Helper()
     func testHelperConcatenateTwoStrings() {
-        XCTAssertEqual(halper.concatenate("a", s2: "b"), "ab", "")
+        XCTAssertEqual(helper.concatenate("a", s2: "b"), "ab", "")
     }
     
     func testHelperConcatenateStringAndNil() {
-        XCTAssertEqual(halper.concatenate("a", s2: nil), "a", "")
+        XCTAssertEqual(helper.concatenate("a", s2: nil), "a", "")
     }
     
     func testHelperConcatenateEmptyStringObjectAndString() {
-        XCTAssertEqual(halper.concatenate(String(), s2: "b"), "b", "")
+        XCTAssertEqual(helper.concatenate(String(), s2: "b"), "b", "")
     }
     
     
-    //I'm not sending bool as parameter into method becouse that wouldn't be override,
+    //I'm not sending bool as parameter into method because that wouldn't be override,
     //so signIn() method would still invoke isConnection without parametres
     class mockAPIManager: APIManager {
         
