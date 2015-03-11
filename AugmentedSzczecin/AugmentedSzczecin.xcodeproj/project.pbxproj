@@ -16,6 +16,7 @@
 		6D2DE50E1A9B7033003717F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2DE50D1A9B7033003717F8 /* Images.xcassets */; };
 		6D2DE5111A9B7033003717F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D2DE50F1A9B7033003717F8 /* LaunchScreen.xib */; };
 		6D2DE51D1A9B7033003717F8 /* AugmentedSzczecinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2DE51C1A9B7033003717F8 /* AugmentedSzczecinTests.swift */; };
+		6D4EF5231AB0940600EAB02F /* WojciechTyziniecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4EF5221AB0940600EAB02F /* WojciechTyziniecTests.swift */; };
 		6DE92C691AA47622005AB6B9 /* FileToTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE92C681AA47622005AB6B9 /* FileToTest.swift */; };
 		D386927B9EBA7240D980CCF6 /* Pods_AugmentedSzczecin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910EF554C1DC1F0DAAA42A47 /* Pods_AugmentedSzczecin.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		6D2DE5161A9B7033003717F8 /* AugmentedSzczecinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AugmentedSzczecinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2DE51B1A9B7033003717F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D2DE51C1A9B7033003717F8 /* AugmentedSzczecinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedSzczecinTests.swift; sourceTree = "<group>"; };
+		6D4EF5221AB0940600EAB02F /* WojciechTyziniecTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WojciechTyziniecTests.swift; sourceTree = "<group>"; };
 		6DE92C681AA47622005AB6B9 /* FileToTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileToTest.swift; sourceTree = "<group>"; };
 		88C0473809D3465E0B0E8CE0 /* Pods_AugmentedSzczecinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AugmentedSzczecinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		910EF554C1DC1F0DAAA42A47 /* Pods_AugmentedSzczecin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AugmentedSzczecin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				6D2DE51C1A9B7033003717F8 /* AugmentedSzczecinTests.swift */,
 				6D2DE51A1A9B7033003717F8 /* Supporting Files */,
 				050C4F971AA6619F00EBE477 /* KacperTlustyTests.swift */,
+				6D4EF5221AB0940600EAB02F /* WojciechTyziniecTests.swift */,
 			);
 			path = AugmentedSzczecinTests;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4EF5231AB0940600EAB02F /* WojciechTyziniecTests.swift in Sources */,
 				050C4F981AA6619F00EBE477 /* KacperTlustyTests.swift in Sources */,
 				050C4F961AA6618900EBE477 /* FileToTest.swift in Sources */,
 				6D2DE51D1A9B7033003717F8 /* AugmentedSzczecinTests.swift in Sources */,
