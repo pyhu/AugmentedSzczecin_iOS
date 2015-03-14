@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		054B546A1AB47B6500ABCE74 /* ASFirstContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B54691AB47B6500ABCE74 /* ASFirstContactViewController.swift */; };
+		054B546C1AB47F7D00ABCE74 /* ASRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B546B1AB47F7D00ABCE74 /* ASRegistrationViewController.swift */; };
+		054B546E1AB482E200ABCE74 /* ASRegistrationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B546D1AB482E200ABCE74 /* ASRegistrationSegue.swift */; };
 		23625D3D1AAE0DB100EAC93B /* libBLSAugmentedController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23625D3C1AAE0DB100EAC93B /* libBLSAugmentedController.a */; };
 		47B8BD5423453E8F7879AFAB /* Pods_AugmentedSzczecinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C0473809D3465E0B0E8CE0 /* Pods_AugmentedSzczecinTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D2DE5071A9B7033003717F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2DE5061A9B7033003717F8 /* AppDelegate.swift */; };
@@ -30,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		054B54691AB47B6500ABCE74 /* ASFirstContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASFirstContactViewController.swift; sourceTree = "<group>"; };
+		054B546B1AB47F7D00ABCE74 /* ASRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASRegistrationViewController.swift; sourceTree = "<group>"; };
+		054B546D1AB482E200ABCE74 /* ASRegistrationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASRegistrationSegue.swift; sourceTree = "<group>"; };
 		057FA5CAC38BA6CA6D144787 /* Pods-AugmentedSzczecinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecinTests/Pods-AugmentedSzczecinTests.release.xcconfig"; sourceTree = "<group>"; };
 		23625D3C1AAE0DB100EAC93B /* libBLSAugmentedController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBLSAugmentedController.a; path = "BLSAugmentedController/build/Debug-iphoneos/libBLSAugmentedController.a"; sourceTree = "<group>"; };
 		6D2DE5011A9B7033003717F8 /* AugmentedSzczecin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedSzczecin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,10 +114,13 @@
 			children = (
 				6D2DE5061A9B7033003717F8 /* AppDelegate.swift */,
 				6D2DE5081A9B7033003717F8 /* ViewController.swift */,
+				054B54691AB47B6500ABCE74 /* ASFirstContactViewController.swift */,
+				054B546B1AB47F7D00ABCE74 /* ASRegistrationViewController.swift */,
 				6D90A5721AA744B300F36771 /* Storyboards & XIBs */,
 				6D2DE5041A9B7033003717F8 /* Supporting Files */,
 				6D2DE50D1A9B7033003717F8 /* Images.xcassets */,
 				A4FE1C6F1AA518750044DE55 /* ASTestViewController.swift */,
+				054B546D1AB482E200ABCE74 /* ASRegistrationSegue.swift */,
 			);
 			path = AugmentedSzczecin;
 			sourceTree = "<group>";
@@ -396,8 +405,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054B546A1AB47B6500ABCE74 /* ASFirstContactViewController.swift in Sources */,
 				A4FE1C701AA518750044DE55 /* ASTestViewController.swift in Sources */,
+				054B546E1AB482E200ABCE74 /* ASRegistrationSegue.swift in Sources */,
 				6D2DE5091A9B7033003717F8 /* ViewController.swift in Sources */,
+				054B546C1AB47F7D00ABCE74 /* ASRegistrationViewController.swift in Sources */,
 				6D2DE5071A9B7033003717F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
