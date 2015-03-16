@@ -10,6 +10,8 @@ import UIKit
 
 class ASFirstContactViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
     @IBAction func showRegistrationViewController(sender: AnyObject) {
         self.performSegueWithIdentifier("ShowRegistration", sender: nil)
     }
