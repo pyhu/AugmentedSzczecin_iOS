@@ -41,4 +41,10 @@ class ASFirstContactViewControllerTests: XCTestCase {
         let responders: NSArray = vc!.registerButton.actionsForTarget(vc!, forControlEvent: UIControlEvents.TouchUpInside)!
         XCTAssertTrue(responders.containsObject("showRegistrationViewController:"), "Register button has no actions")
     }
+    
+    func testRegisterSegue() {
+        UIApplication.sharedApplication().keyWindow!.rootViewController = vc
+        vc!.performSegueWithIdentifier("ShowRegistration", sender: nil)
+        XCTAssertNotNil(vc!.presentedViewController, "VC isn't presented")
+    }
 }

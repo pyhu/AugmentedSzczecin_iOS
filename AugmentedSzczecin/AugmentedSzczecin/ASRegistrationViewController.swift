@@ -13,6 +13,7 @@ class ASRegistrationViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
+    
     @IBAction func registerButtonTapped(sender: AnyObject) {
         self.performSegueWithIdentifier("RegisterSegue", sender: nil)
     }
