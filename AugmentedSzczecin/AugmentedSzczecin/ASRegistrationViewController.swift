@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ASRegistrationViewController: UIViewController {
+class ASRegistrationViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -16,6 +16,23 @@ class ASRegistrationViewController: UIViewController {
     
     @IBAction func registerButtonTapped(sender: AnyObject) {
         self.performSegueWithIdentifier("RegisterSegue", sender: nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.view.endEditing(true)
     }
 }
 

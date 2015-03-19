@@ -36,7 +36,7 @@ class UIRegistrationViewControllerTests: XCTestCase {
     func testEmailTextField() {
         XCTAssertNotNil(vc!.emailTextField, "Email textfield is nil")
     }
-    
+
     func testRegisterButton() {
         XCTAssertNotNil(vc!.registerButton, "Register button is nil")
     }

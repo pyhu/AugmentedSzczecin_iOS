@@ -12,9 +12,26 @@ class ASRegistrationSegue: UIStoryboardSegue {
     
     override func perform() {
         
-        var sourceViewController: UIViewController = self.sourceViewController as! UIViewController
-        var destinationViewController: UIViewController = self.destinationViewController as! UIViewController
+        var sourceVC: UIViewController = self.sourceViewController as! UIViewController
+        var destinationVC: UIViewController = self.destinationViewController as! UIViewController
+        var window: UIWindow! = UIApplication.sharedApplication().delegate!.window!
+
+        window.insertSubview(destinationVC.view, atIndex: 0)
         
-        sourceViewController.view.window!.rootViewController = self.destinationViewController as? UIViewController
+        var sourceVCFrame: CGRect = sourceVC.view.frame
+        
+        sourceVCFrame.origin.y = sourceVCFrame.size.height
+
+        UIView.animateWithDuration(0.55, delay: 0.0, usingSpringWithDamping: 500.0, initialSpringVelocity: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations:{ ()
+            sourceVC.view.frame = sourceVCFrame
+            }, completion: {(Bool finished) in
+                window.rootViewController! = destinationVC as UIViewController
+                for view in window!.subviews as! [UIView] {
+                    if (view != window.rootViewController!.view) {
+                        view.removeFromSuperview()
+                    }
+                }
+        })
+        
     }
 }
