@@ -14,8 +14,12 @@ class ASRegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
     
+
     @IBAction func registerButtonTapped(sender: AnyObject) {
+        var alert = ASAlertController()
+        alert.showAlertWithDelay("Rejestruję...", alertMessage: "Proszę czekać...", viewController: self, delay: 2.0)
         self.performSegueWithIdentifier("RegisterSegue", sender: nil)
+    
     }
     
     override func viewDidLoad() {
