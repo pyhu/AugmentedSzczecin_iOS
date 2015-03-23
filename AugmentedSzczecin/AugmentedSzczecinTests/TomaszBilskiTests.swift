@@ -1,4 +1,4 @@
-////  AugmentedSzczecinTests.swift
+////  TomaszBilskiTests.swift
 ////  AugmentedSzczecinTests
 ////
 ////  Created by Tomasz Bilski on 10/03/15.
@@ -8,14 +8,14 @@
 import UIKit
 import XCTest
 
-class AugmentedSzczecinTests: XCTestCase {
+class TomaszBilskiTests: XCTestCase {
     
-    var apiManager: APIManager?
+    var helper: Helper?
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        apiManager = APIManager()
+        helper = Helper()
     }
     
     override func tearDown() {
@@ -28,31 +28,36 @@ class AugmentedSzczecinTests: XCTestCase {
         XCTAssert(true, "Pass")
     }
     
-    func testSignIn() {
+    func testConcatenate() {
+        XCTAssertEqual(helper!.concatenate("x", s2: "y"), "xy", "")
+    }
+    
+    
+    class APIManagerMock: APIManager {
         
-        var isSignedIn = apiManager?.signIn("ss",password: "s" ).success
-        XCTAssert(isSignedIn!, "All went right. You are signed in")
+        internal var isConnected: Bool
+        
+        init(isConnected: Bool!) {
+            self.isConnected = isConnected
+        }
+        
+        internal override func isConnection() -> Bool {
+            return isConnected
+        }
         
     }
     
+    
     func testSignInMock() {
         
-        class APIManagerMock: APIManager {
-            
-            private override func isConnection() -> Bool {
-                
-                return true
-            }
-            
-        }
+        var apiManagerMock = APIManagerMock(isConnected: true)
         
-        var apiManagerMock = APIManagerMock()
-        
-        XCTAssert(apiManagerMock.signIn("abcd", password: "abcd").success, "All went right. You are signed in")
-        
+        XCTAssertEqual(apiManagerMock.signIn("abcd", password: "abcd").success, true)
         
         
     }
+    
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
