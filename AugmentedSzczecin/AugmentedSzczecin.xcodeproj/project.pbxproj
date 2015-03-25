@@ -18,6 +18,7 @@
 		6D4EF5231AB0940600EAB02F /* WojciechTyziniecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4EF5221AB0940600EAB02F /* WojciechTyziniecTests.swift */; };
 		6DE538121AB9CC8000283E0B /* TomaszBilskiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE538111AB9CC8000283E0B /* TomaszBilskiTests.swift */; };
 		6DE92C691AA47622005AB6B9 /* FileToTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE92C681AA47622005AB6B9 /* FileToTest.swift */; };
+		A495153F1AC2D02500A2C05C /* GrzegorzPawlowiczTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A495153E1AC2D02500A2C05C /* GrzegorzPawlowiczTests.swift */; };
 		D386927B9EBA7240D980CCF6 /* Pods_AugmentedSzczecin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910EF554C1DC1F0DAAA42A47 /* Pods_AugmentedSzczecin.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		88C0473809D3465E0B0E8CE0 /* Pods_AugmentedSzczecinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AugmentedSzczecinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		910EF554C1DC1F0DAAA42A47 /* Pods_AugmentedSzczecin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AugmentedSzczecin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A78CE0DD15202A86FD6BD9A /* Pods-AugmentedSzczecin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecin.release.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecin/Pods-AugmentedSzczecin.release.xcconfig"; sourceTree = "<group>"; };
+		A495153E1AC2D02500A2C05C /* GrzegorzPawlowiczTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrzegorzPawlowiczTests.swift; sourceTree = "<group>"; };
 		B6EEC7F471F4EBF1FD094437 /* Pods-AugmentedSzczecin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecin/Pods-AugmentedSzczecin.debug.xcconfig"; sourceTree = "<group>"; };
 		C71386729CA57FAA34BF4B7D /* Pods-AugmentedSzczecinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecinTests/Pods-AugmentedSzczecinTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				050C4F971AA6619F00EBE477 /* KacperTlustyTests.swift */,
 				6DE538111AB9CC8000283E0B /* TomaszBilskiTests.swift */,
 				6D4EF5221AB0940600EAB02F /* WojciechTyziniecTests.swift */,
+				A495153E1AC2D02500A2C05C /* GrzegorzPawlowiczTests.swift */,
 			);
 			path = AugmentedSzczecinTests;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				6DE538121AB9CC8000283E0B /* TomaszBilskiTests.swift in Sources */,
 				050C4F981AA6619F00EBE477 /* KacperTlustyTests.swift in Sources */,
 				050C4F961AA6618900EBE477 /* FileToTest.swift in Sources */,
+				A495153F1AC2D02500A2C05C /* GrzegorzPawlowiczTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
