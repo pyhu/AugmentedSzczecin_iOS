@@ -13,12 +13,21 @@ class ASRegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
+    var alert = ASAlertController()
+    var success = true;
     
-
     @IBAction func registerButtonTapped(sender: AnyObject) {
-        var alert = ASAlertController()
-        alert.showAlertWithDelay("Rejestruję...", alertMessage: "Proszę czekać...", viewController: self, delay: 2.0)
-        self.performSegueWithIdentifier("RegisterSegue", sender: nil)
+    
+        //request to api
+        alert.showAlertWithDelay("Loading", alertMessage: "Please wait...", controller: self, delay: 2)
+        if(success == true) {
+            alert.stopTimer()
+            self.performSegueWithIdentifier("RegisterSegue", sender: nil)
+        }
+        else {
+            alert.dismissAlert(self)
+            alert.showAlertWithDelay("error", alertMessage: "404notfound", controller: self, delay: 0)
+        }
     
     }
     
