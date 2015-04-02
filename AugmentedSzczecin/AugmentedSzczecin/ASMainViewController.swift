@@ -15,8 +15,8 @@ class ASMainViewController: UIViewController, BLSAugmentedViewControllerDelegate
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "BLSAugmentedViewController") {
             augmentedVC = segue.destinationViewController as! BLSAugmentedViewController
+            augmentedVC.setMapRegionWithTopLeftCoordinate(CLLocationCoordinate2DMake(53.43073,14.55503), andBottomRightCoordinate: CLLocationCoordinate2DMake(53.508272, 14.610112), animated: false)
             augmentedVC.delegate = self
-            
         }
     }
     
