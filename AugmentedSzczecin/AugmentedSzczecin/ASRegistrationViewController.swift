@@ -13,14 +13,19 @@ class ASRegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
     
     @IBAction func registerButtonTapped(sender: AnyObject) {
         self.performSegueWithIdentifier("RegisterSegue", sender: nil)
     }
     
+    @IBAction func cancelButtonTapped(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         emailTextField.delegate = self
         passwordTextField.delegate = self
         

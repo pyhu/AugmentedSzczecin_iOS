@@ -29,21 +29,29 @@ class UIRegistrationViewControllerTests: XCTestCase {
         XCTAssertNotNil(vc!, "View controller is nil")
     }
     
-    func testPasswordTextField() {
+    func testPasswordTextFieldExist() {
         XCTAssertNotNil(vc!.passwordTextField, "Password textfield is nil")
     }
     
-    func testEmailTextField() {
+    func testEmailTextFieldExist() {
         XCTAssertNotNil(vc!.emailTextField, "Email textfield is nil")
     }
 
-    func testRegisterButton() {
+    func testRegisterButtonExist() {
         XCTAssertNotNil(vc!.registerButton, "Register button is nil")
+    }
+    
+    func testCancelButtonExist() {
+        XCTAssertNotNil(vc!.cancelButton, "Cancel button is nil")
     }
     
     func testRegisterButtonTap() {
         let responders: NSArray = vc!.registerButton.actionsForTarget(vc!, forControlEvent: UIControlEvents.TouchUpInside)!
         XCTAssertTrue(responders.containsObject("registerButtonTapped:"), "Register button has no actions")
     }
-
+    
+    func testCancelButtonTap() {
+        let responders: NSArray = vc!.cancelButton.actionsForTarget(vc!, forControlEvent: UIControlEvents.TouchUpInside)!
+        XCTAssertTrue(responders.containsObject("cancelButtonTapped:"), "Cancel button has no actions")
+    }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7B0-UG-zg7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7B0-UG-zg7">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -114,19 +114,32 @@
                                     <action selector="registerButtonTapped:" destination="BZm-JQ-Z3R" eventType="touchUpInside" id="L1z-9S-S4b"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVR-1N-zPd">
+                                <rect key="frame" x="277" y="371" width="48" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="BZm-JQ-Z3R" eventType="touchUpInside" id="0gq-O1-Gu9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AMc-pq-knP" firstAttribute="top" secondItem="Q6C-VA-RIr" secondAttribute="bottom" constant="69" id="6Y1-NI-Bo7"/>
                             <constraint firstAttribute="centerX" secondItem="AMc-pq-knP" secondAttribute="centerX" id="9NZ-wm-QZA"/>
+                            <constraint firstItem="lEs-KN-qdx" firstAttribute="top" secondItem="hVR-1N-zPd" secondAttribute="bottom" constant="199" id="Fbp-Oh-0Au"/>
                             <constraint firstItem="ttG-Xk-FRl" firstAttribute="top" secondItem="AMc-pq-knP" secondAttribute="bottom" constant="103" id="SCf-zV-iYK"/>
                             <constraint firstAttribute="centerX" secondItem="Q6C-VA-RIr" secondAttribute="centerX" id="X1B-XY-dJZ"/>
                             <constraint firstItem="AMc-pq-knP" firstAttribute="top" secondItem="Q6C-VA-RIr" secondAttribute="bottom" constant="69" id="Y3v-aZ-h7t"/>
+                            <constraint firstItem="hVR-1N-zPd" firstAttribute="top" secondItem="ttG-Xk-FRl" secondAttribute="bottom" constant="8" id="YUC-UF-S0C"/>
+                            <constraint firstAttribute="centerX" secondItem="hVR-1N-zPd" secondAttribute="centerX" constant="-1" id="arA-ZP-PcG"/>
                             <constraint firstAttribute="centerX" secondItem="ttG-Xk-FRl" secondAttribute="centerX" id="gEB-GR-TUo"/>
                             <constraint firstItem="Q6C-VA-RIr" firstAttribute="top" secondItem="HaI-ke-G3z" secondAttribute="bottom" constant="81" id="uSK-OO-pbC"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="hVR-1N-zPd" id="qac-21-rxo"/>
                         <outlet property="emailTextField" destination="Q6C-VA-RIr" id="Pqb-Bw-Kbd"/>
                         <outlet property="passwordTextField" destination="AMc-pq-knP" id="kdq-Tw-n07"/>
                         <outlet property="registerButton" destination="ttG-Xk-FRl" id="Fjb-ob-o4g"/>
