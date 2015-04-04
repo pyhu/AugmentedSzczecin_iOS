@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--First Contact View Controller-->
@@ -149,45 +148,12 @@
                     <view key="view" contentMode="scaleToFill" id="60O-2R-d04">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gu0-5B-rbw">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <connections>
-                                    <segue destination="OtB-M4-OqQ" kind="embed" identifier="BLSAugmentedViewController" id="peB-WV-vJQ"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="gu0-5B-rbw" secondAttribute="trailing" constant="-16" id="5jX-n8-Scw"/>
-                            <constraint firstItem="gu0-5B-rbw" firstAttribute="top" secondItem="60O-2R-d04" secondAttribute="topMargin" id="TVt-Iz-Ah9"/>
-                            <constraint firstItem="xoK-ji-1sM" firstAttribute="top" secondItem="gu0-5B-rbw" secondAttribute="bottom" id="nkg-TA-wya"/>
-                            <constraint firstItem="gu0-5B-rbw" firstAttribute="leading" secondItem="60O-2R-d04" secondAttribute="leadingMargin" constant="-16" id="xeR-GZ-tRd"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fG-aR-A3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1671" y="329"/>
-        </scene>
-        <!--Augmented View Controller-->
-        <scene sceneID="VOK-oJ-eYW">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="OtB-M4-OqQ" customClass="BLSAugmentedViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3FB-it-FIu"/>
-                        <viewControllerLayoutGuide type="bottom" id="DIc-wK-Iec"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pne-ZG-ERl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7da-53-PTE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2418" y="329"/>
         </scene>
     </scenes>
 </document>
