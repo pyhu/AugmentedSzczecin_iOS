@@ -13,11 +13,10 @@
 		054B54701AB630A400ABCE74 /* ASRegistrationSegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B546F1AB630A400ABCE74 /* ASRegistrationSegueTests.swift */; };
 		054B54721AB630D700ABCE74 /* ASFirstContactViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B54711AB630D700ABCE74 /* ASFirstContactViewControllerTests.swift */; };
 		054B54741AB630F800ABCE74 /* UIRegistrationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B54731AB630F800ABCE74 /* UIRegistrationViewControllerTests.swift */; };
-		054B54771AB632AB00ABCE74 /* ASRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B546B1AB47F7D00ABCE74 /* ASRegistrationViewController.swift */; };
 		054B54781AB6361900ABCE74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2DE50A1A9B7033003717F8 /* Main.storyboard */; };
 		054B54791AB7381500ABCE74 /* ASFirstContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B54691AB47B6500ABCE74 /* ASFirstContactViewController.swift */; };
 		054B547B1AB73AE200ABCE74 /* ASMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B547A1AB73AE200ABCE74 /* ASMainViewController.swift */; };
-		054B547C1AB73B1900ABCE74 /* ASMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B547A1AB73AE200ABCE74 /* ASMainViewController.swift */; };
+		057235D91ACD932B00B8FAE6 /* ASRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B546B1AB47F7D00ABCE74 /* ASRegistrationViewController.swift */; };
 		05DB8B211AB82624008E02DC /* ASRegistrationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B546D1AB482E200ABCE74 /* ASRegistrationSegue.swift */; };
 		23625D3D1AAE0DB100EAC93B /* libBLSAugmentedController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23625D3C1AAE0DB100EAC93B /* libBLSAugmentedController.a */; };
 		47B8BD5423453E8F7879AFAB /* Pods_AugmentedSzczecinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C0473809D3465E0B0E8CE0 /* Pods_AugmentedSzczecinTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -28,7 +27,6 @@
 		A42F98D81ABEDE42006CF22E /* ASDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A42F98D61ABEDE42006CF22E /* ASDataModel.xcdatamodeld */; };
 		A42F98DC1ABEE073006CF22E /* _ASUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42F98DA1ABEE073006CF22E /* _ASUser.swift */; };
 		A42F98DD1ABEE073006CF22E /* ASUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42F98DB1ABEE073006CF22E /* ASUser.swift */; };
-		A4FE1C701AA518750044DE55 /* ASTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE1C6F1AA518750044DE55 /* ASTestViewController.swift */; };
 		D386927B9EBA7240D980CCF6 /* Pods_AugmentedSzczecin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910EF554C1DC1F0DAAA42A47 /* Pods_AugmentedSzczecin.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -76,7 +74,6 @@
 		A42F98D71ABEDE42006CF22E /* ASDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ASDataModel.xcdatamodel; sourceTree = "<group>"; };
 		A42F98DA1ABEE073006CF22E /* _ASUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _ASUser.swift; path = Database/_ASUser.swift; sourceTree = "<group>"; };
 		A42F98DB1ABEE073006CF22E /* ASUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASUser.swift; path = Database/ASUser.swift; sourceTree = "<group>"; };
-		A4FE1C6F1AA518750044DE55 /* ASTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTestViewController.swift; sourceTree = "<group>"; };
 		A4FE1C711AA5191D0044DE55 /* AugmentedSzczecin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AugmentedSzczecin-Bridging-Header.h"; sourceTree = "<group>"; };
 		B6EEC7F471F4EBF1FD094437 /* Pods-AugmentedSzczecin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecin/Pods-AugmentedSzczecin.debug.xcconfig"; sourceTree = "<group>"; };
 		C71386729CA57FAA34BF4B7D /* Pods-AugmentedSzczecinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecinTests/Pods-AugmentedSzczecinTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,7 +129,6 @@
 				054B547A1AB73AE200ABCE74 /* ASMainViewController.swift */,
 				054B546B1AB47F7D00ABCE74 /* ASRegistrationViewController.swift */,
 				054B546D1AB482E200ABCE74 /* ASRegistrationSegue.swift */,
-				A4FE1C6F1AA518750044DE55 /* ASTestViewController.swift */,
 				A42F98D91ABEDE4E006CF22E /* Database */,
 				6D90A5721AA744B300F36771 /* Storyboards & XIBs */,
 				6D2DE5041A9B7033003717F8 /* Supporting Files */,
@@ -437,7 +433,6 @@
 				054B546A1AB47B6500ABCE74 /* ASFirstContactViewController.swift in Sources */,
 				054B547B1AB73AE200ABCE74 /* ASMainViewController.swift in Sources */,
 				A42F98DC1ABEE073006CF22E /* _ASUser.swift in Sources */,
-				A4FE1C701AA518750044DE55 /* ASTestViewController.swift in Sources */,
 				054B546E1AB482E200ABCE74 /* ASRegistrationSegue.swift in Sources */,
 				A42F98DD1ABEE073006CF22E /* ASUser.swift in Sources */,
 				054B546C1AB47F7D00ABCE74 /* ASRegistrationViewController.swift in Sources */,
@@ -451,12 +446,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				054B54701AB630A400ABCE74 /* ASRegistrationSegueTests.swift in Sources */,
-				054B547C1AB73B1900ABCE74 /* ASMainViewController.swift in Sources */,
 				054B54741AB630F800ABCE74 /* UIRegistrationViewControllerTests.swift in Sources */,
 				05DB8B211AB82624008E02DC /* ASRegistrationSegue.swift in Sources */,
-				054B54771AB632AB00ABCE74 /* ASRegistrationViewController.swift in Sources */,
 				054B54791AB7381500ABCE74 /* ASFirstContactViewController.swift in Sources */,
 				054B54721AB630D700ABCE74 /* ASFirstContactViewControllerTests.swift in Sources */,
+				057235D91ACD932B00B8FAE6 /* ASRegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
