@@ -10,16 +10,12 @@ import UIKit
 
 class ASMainViewController: BLSAugmentedViewController, BLSAugmentedViewControllerDelegate {
     
-    override func viewDidLoad() {
-    }
-    
     override func viewWillAppear(animated: Bool) {
         self.setMapRegionWithTopLeftCoordinate(CLLocationCoordinate2DMake(53.4286829,14.5559835), andBottomRightCoordinate: CLLocationCoordinate2DMake(53.4286829,14.5559835), animated: false)
     }
     
     func augmentedViewController(augmentedViewController: BLSAugmentedViewController!, viewForAnnotation annotation: BLSAugmentedAnnotation!, forUserLocation location: CLLocation!, distance: CLLocationDistance) -> BLSAugmentedAnnotationView! {
-        var view = BLSAugmentedAnnotationView()
-        return view
+        return BLSAugmentedAnnotationView()
     }
     
 }
