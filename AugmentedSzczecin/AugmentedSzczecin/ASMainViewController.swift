@@ -28,8 +28,11 @@ class ASMainViewController: BLSAugmentedViewController, BLSAugmentedViewControll
     @IBAction func mapTypeChange(sender: UISegmentedControl) {
         if (sender.selectedSegmentIndex == 0) {
             self.style = BLSAugmentedViewControllerStyle.Map
+            self.setMapRegionWithTopLeftCoordinate(CLLocationCoordinate2DMake(53.4294687,14.5556164), andBottomRightCoordinate: CLLocationCoordinate2DMake(53.4288305,14.5561803), animated: false)
         } else if (sender.selectedSegmentIndex == 1) {
             self.style = BLSAugmentedViewControllerStyle.AR
         }
     }
+    
+    
 }
