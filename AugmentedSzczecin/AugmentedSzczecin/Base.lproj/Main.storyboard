@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--First Contact View Controller-->
@@ -161,12 +162,33 @@
                     <view key="view" contentMode="scaleToFill" id="60O-2R-d04">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZUB-zw-lil">
+                                <rect key="frame" x="16" y="506" width="568" height="29"/>
+                                <segments>
+                                    <segment title="2D"/>
+                                    <segment title="Virtual Reality"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapTypeChange:" destination="Wmo-2f-gmO" eventType="valueChanged" id="wkL-b8-46l"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZUB-zw-lil" firstAttribute="trailing" secondItem="60O-2R-d04" secondAttribute="trailingMargin" id="12a-Bj-Pxk"/>
+                            <constraint firstItem="xoK-ji-1sM" firstAttribute="top" secondItem="ZUB-zw-lil" secondAttribute="bottom" constant="66" id="8ik-LO-0Lq"/>
+                            <constraint firstItem="ZUB-zw-lil" firstAttribute="leading" secondItem="60O-2R-d04" secondAttribute="leadingMargin" id="DHk-Oe-ZCW"/>
+                            <constraint firstAttribute="centerX" secondItem="ZUB-zw-lil" secondAttribute="centerX" id="Wf4-9V-qYD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapChoiceSegmentedControl" destination="ZUB-zw-lil" id="4jG-C0-i7X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fG-aR-A3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="329"/>
+            <point key="canvasLocation" x="1681" y="329"/>
         </scene>
     </scenes>
 </document>
