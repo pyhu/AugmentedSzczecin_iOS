@@ -16,6 +16,8 @@
 		054B54781AB6361900ABCE74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2DE50A1A9B7033003717F8 /* Main.storyboard */; };
 		054B54791AB7381500ABCE74 /* ASFirstContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B54691AB47B6500ABCE74 /* ASFirstContactViewController.swift */; };
 		054B547B1AB73AE200ABCE74 /* ASMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B547A1AB73AE200ABCE74 /* ASMainViewController.swift */; };
+		056730261AD3E62E0055308E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056730251AD3E62E0055308E /* SystemConfiguration.framework */; };
+		0567302C1AD3E7C40055308E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0567302B1AD3E7C40055308E /* Reachability.swift */; };
 		057235D91ACD932B00B8FAE6 /* ASRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B546B1AB47F7D00ABCE74 /* ASRegistrationViewController.swift */; };
 		05DB8B211AB82624008E02DC /* ASRegistrationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B546D1AB482E200ABCE74 /* ASRegistrationSegue.swift */; };
 		23625D3D1AAE0DB100EAC93B /* libBLSAugmentedController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23625D3C1AAE0DB100EAC93B /* libBLSAugmentedController.a */; };
@@ -49,6 +51,8 @@
 		054B54711AB630D700ABCE74 /* ASFirstContactViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASFirstContactViewControllerTests.swift; sourceTree = "<group>"; };
 		054B54731AB630F800ABCE74 /* UIRegistrationViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRegistrationViewControllerTests.swift; sourceTree = "<group>"; };
 		054B547A1AB73AE200ABCE74 /* ASMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASMainViewController.swift; sourceTree = "<group>"; };
+		056730251AD3E62E0055308E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0567302B1AD3E7C40055308E /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		057FA5CAC38BA6CA6D144787 /* Pods-AugmentedSzczecinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecinTests/Pods-AugmentedSzczecinTests.release.xcconfig"; sourceTree = "<group>"; };
 		23625D3C1AAE0DB100EAC93B /* libBLSAugmentedController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBLSAugmentedController.a; path = "BLSAugmentedController/build/Debug-iphoneos/libBLSAugmentedController.a"; sourceTree = "<group>"; };
 		6D2DE5011A9B7033003717F8 /* AugmentedSzczecin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedSzczecin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				056730261AD3E62E0055308E /* SystemConfiguration.framework in Frameworks */,
 				23625D3D1AAE0DB100EAC93B /* libBLSAugmentedController.a in Frameworks */,
 				D386927B9EBA7240D980CCF6 /* Pods_AugmentedSzczecin.framework in Frameworks */,
 			);
@@ -135,6 +140,7 @@
 				6D90A5721AA744B300F36771 /* Storyboards & XIBs */,
 				6D2DE5041A9B7033003717F8 /* Supporting Files */,
 				6D2DE50D1A9B7033003717F8 /* Images.xcassets */,
+				0567302B1AD3E7C40055308E /* Reachability.swift */,
 			);
 			path = AugmentedSzczecin;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 		F723254C0E53789B7B9D930F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				056730251AD3E62E0055308E /* SystemConfiguration.framework */,
 				23625D3C1AAE0DB100EAC93B /* libBLSAugmentedController.a */,
 				910EF554C1DC1F0DAAA42A47 /* Pods_AugmentedSzczecin.framework */,
 				88C0473809D3465E0B0E8CE0 /* Pods_AugmentedSzczecinTests.framework */,
@@ -439,6 +446,7 @@
 				A42F98DC1ABEE073006CF22E /* _ASUser.swift in Sources */,
 				054B546E1AB482E200ABCE74 /* ASRegistrationSegue.swift in Sources */,
 				A42F98DD1ABEE073006CF22E /* ASUser.swift in Sources */,
+				0567302C1AD3E7C40055308E /* Reachability.swift in Sources */,
 				054B546C1AB47F7D00ABCE74 /* ASRegistrationViewController.swift in Sources */,
 				6D2DE5071A9B7033003717F8 /* AppDelegate.swift in Sources */,
 				A42F98D81ABEDE42006CF22E /* ASDataModel.xcdatamodeld in Sources */,
