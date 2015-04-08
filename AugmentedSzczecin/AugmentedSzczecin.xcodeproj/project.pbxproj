@@ -28,6 +28,8 @@
 		6D2DE5111A9B7033003717F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D2DE50F1A9B7033003717F8 /* LaunchScreen.xib */; };
 		6D2DE51D1A9B7033003717F8 /* AugmentedSzczecinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2DE51C1A9B7033003717F8 /* AugmentedSzczecinTests.swift */; };
 		A4FE1C701AA518750044DE55 /* ASTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE1C6F1AA518750044DE55 /* ASTestViewController.swift */; };
+		CDA7ACA31AD54EF1003149A0 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7ACA21AD54EF1003149A0 /* NSTimerExtension.swift */; };
+		CDA7ACA41AD54EF1003149A0 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7ACA21AD54EF1003149A0 /* NSTimerExtension.swift */; };
 		CDCA24451ABF0F8900FA6B9B /* ASAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCA24441ABF0F8900FA6B9B /* ASAlertController.swift */; };
 		CDCA24481ABF176F00FA6B9B /* ASAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCA24441ABF0F8900FA6B9B /* ASAlertController.swift */; };
 		D386927B9EBA7240D980CCF6 /* Pods_AugmentedSzczecin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910EF554C1DC1F0DAAA42A47 /* Pods_AugmentedSzczecin.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -80,6 +82,7 @@
 		A4FE1C711AA5191D0044DE55 /* AugmentedSzczecin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AugmentedSzczecin-Bridging-Header.h"; sourceTree = "<group>"; };
 		B6EEC7F471F4EBF1FD094437 /* Pods-AugmentedSzczecin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecin/Pods-AugmentedSzczecin.debug.xcconfig"; sourceTree = "<group>"; };
 		C71386729CA57FAA34BF4B7D /* Pods-AugmentedSzczecinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugmentedSzczecinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AugmentedSzczecinTests/Pods-AugmentedSzczecinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDA7ACA21AD54EF1003149A0 /* NSTimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerExtension.swift; sourceTree = "<group>"; };
 		CDCA24441ABF0F8900FA6B9B /* ASAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +149,7 @@
 		6D2DE5041A9B7033003717F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDA7ACA21AD54EF1003149A0 /* NSTimerExtension.swift */,
 				A4FE1C711AA5191D0044DE55 /* AugmentedSzczecin-Bridging-Header.h */,
 				6D2DE5051A9B7033003717F8 /* Info.plist */,
 			);
@@ -428,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				054B546A1AB47B6500ABCE74 /* ASFirstContactViewController.swift in Sources */,
+				CDA7ACA31AD54EF1003149A0 /* NSTimerExtension.swift in Sources */,
 				054B547B1AB73AE200ABCE74 /* ASMainViewController.swift in Sources */,
 				CDCA24451ABF0F8900FA6B9B /* ASAlertController.swift in Sources */,
 				A4FE1C701AA518750044DE55 /* ASTestViewController.swift in Sources */,
@@ -450,6 +455,7 @@
 				054B54771AB632AB00ABCE74 /* ASRegistrationViewController.swift in Sources */,
 				054B54791AB7381500ABCE74 /* ASFirstContactViewController.swift in Sources */,
 				CDCA24481ABF176F00FA6B9B /* ASAlertController.swift in Sources */,
+				CDA7ACA41AD54EF1003149A0 /* NSTimerExtension.swift in Sources */,
 				054B54721AB630D700ABCE74 /* ASFirstContactViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
